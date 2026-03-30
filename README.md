@@ -427,8 +427,17 @@ These open datasets provide complete or near-complete company databases for bulk
 | [LEI Search (GLEIF)](https://search.gleif.org/) | API | Global Legal Entity Identifier lookup. [API docs](https://www.gleif.org/en/lei-data/gleif-api). 🟢 Free. |
 | [OpenCorporates](https://opencorporates.com/) | API | 235M+ companies across 145 jurisdictions. Free for public benefit, 💰 paid commercial. |
 | [B2Trust](https://b2trust.com) | Web | Free multi-country registry search. Queries government APIs in real-time. |
+| [Registry API Examples](https://github.com/B2Trust-Infrastructure/registry-api-examples) | Code | TypeScript examples for querying 11 government registry APIs directly |
+
 
 ---
+
+## See Also
+
+- **[Registry API Examples](https://github.com/B2Trust-Infrastructure/registry-api-examples)** — Production-quality TypeScript code for every registry listed here. If this list tells you *what* exists, that repo shows you *how* to call it.
+
+---
+
 
 ## Contributing
 
