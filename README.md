@@ -420,11 +420,17 @@ These open datasets provide complete or near-complete company databases for bulk
 
 ## Cross-Border Tools
 
-| Tool                                            | Type   | Description                                                                                              |
-| ----------------------------------------------- | ------ | -------------------------------------------------------------------------------------------------------- |
-| VIES                                            | API    | EU VAT number validation with company data                                                               |
-| BRIS                                            | Portal | Search business registers across all 27 EU member states                                                 |
-| [LEI Search (GLEIF)](https://search.gleif.org/) | API    | Global Legal Entity Identifier lookup. [API docs](https://www.gleif.org/en/lei-data/gleif-api). 🟢 Free. |
-| [OpenCorporates](https://opencorporates.com/)   | API    | 235M+ companies across 145 jurisdictions. Free for public benefit, 💰 paid commercial.                   |
-| B2Trust                                         | Web    | Free multi-country registry search. Queries government APIs in real-time.                                |
-| Registry API Examples                           | Code   | TypeScript examples for querying 11 government registry APIs directly                                    |
+| Tool                                                                                                              | Type   | Description                                                                                              |
+| ----------------------------------------------------------------------------------------------------------------- | ------ | -------------------------------------------------------------------------------------------------------- |
+| VIES                                                                                                              | API    | EU VAT number validation with company data. See *EU-Wide* above for the endpoint.                        |
+| BRIS                                                                                                              | Portal | Search business registers across all 27 EU member states. See *EU-Wide* above for the endpoint.          |
+| [LEI Search (GLEIF)](https://search.gleif.org/)                                                                   | API    | Global Legal Entity Identifier lookup. [API docs](https://www.gleif.org/en/lei-data/gleif-api). 🟢 Free. |
+| [OpenCorporates](https://opencorporates.com/)                                                                     | API    | 235M+ companies across 145 jurisdictions. Free for public benefit, 💰 paid commercial.                   |
+| B2Trust                                                                                                           | Web    | Free multi-country registry search. Queries government APIs in real-time. Maintainer of this list.       |
+| [Registry API Examples](https://github.com/B2Trust-Infrastructure/awesome-business-registries/tree/main/examples) | Code   | Minimal TypeScript snippets for querying 8 free, no-auth government registry APIs directly.              |
+
+---
+
+## Contributing
+
+Contributions are welcome! Please read the [contribution guidelines](contributing.md) before submitting a pull request, and follow our [code of conduct](code-of-conduct.md).

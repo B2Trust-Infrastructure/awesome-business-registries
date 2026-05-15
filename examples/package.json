@@ -1,0 +1,22 @@
+{
+  "name": "awesome-business-registries-examples",
+  "version": "1.0.0",
+  "description": "Minimal TypeScript snippets for querying official government business registry APIs.",
+  "license": "CC0-1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "vies": "tsx vies-eu.ts",
+    "gleif": "tsx gleif-global.ts",
+    "norway": "tsx norway-brrg.ts",
+    "finland": "tsx finland-prh.ts",
+    "czech": "tsx czech-ares.ts",
+    "krs": "tsx poland-krs.ts",
+    "bialalista": "tsx poland-bialalista.ts",
+    "sec": "tsx sec-edgar-us.ts"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0"
+  }
+}
