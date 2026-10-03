@@ -229,7 +229,8 @@ Maintained by [B2Trust](https://b2trust.com) — a multi-country business regist
 | ---------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Portal** | https://firmenbuch.at                                                                                                                         |
 | **Auth**   | 💰 Paid (via Justiz.gv.at)                                                                                                                    |
-| **Notes**  | Austrian company register requires payment for detailed information. Basic search possible through BRIS. FN (Firmenbuchnummer) format varies. |
+| **Format** | SOAP/XML (official) · REST/JSON + MCP (third-party, see Notes)                                                                                |
+| **Notes**  | Official register requires payment for detailed information; basic search via BRIS. FN (Firmenbuchnummer) format varies. A free third-party API layer over the official CC BY 4.0 data (company master data, filings and financial ratios) is available as REST/JSON and a remote MCP server at https://www.agentic-firmenbuch.at (free API key); also covers 🇩🇪 Germany. |
 
 ### Southern Europe
 
