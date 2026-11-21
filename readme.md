@@ -252,6 +252,7 @@ Maintained by [B2Trust](https://b2trust.com) — a multi-country business regist
 | **Format**         | REST/XML or JSON (daily summary); notices as PDF |
 | **Bulk data**      | 📦 Each daily issue can be fetched through the summary API |
 | **Notes**          | Decentralized — each province has its own Registro Mercantil. Basic info through BRIS. The BORME is published every working day and lists registered events (incorporations, appointments, dissolutions, insolvencies…) by date and province; notices do not include the CIF, so a per-company lookup means parsing the history and matching it to the CIF yourself (commercial APIs built on the BORME, e.g. [SpainCompanyAPI](https://spaincompanyapi.com), offer lookup by CIF). Reuse under the BOE open data conditions (attribution required). CIF format: letter + 7 digits + check character (e.g. A46103834). VIES returns valid/invalid only for ES. Last verified 2026-11-21. |
+
 #### 🇬🇷 Greece — GEMI (General Electronic Commercial Registry)
 
 |            |                                                                                          |
