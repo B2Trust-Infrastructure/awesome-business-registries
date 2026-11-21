@@ -242,14 +242,16 @@ Maintained by [B2Trust](https://b2trust.com) — a multi-country business regist
 | **Format** | HTML / 💰 API via InfoCamere                                                                                                                                      |
 | **Notes**  | Basic search free. Official extracts (visura camerale) are paid. Codice Fiscale and Partita IVA formats. Run by the network of Chambers of Commerce (InfoCamere). |
 
-#### 🇪🇸 Spain — Registro Mercantil
+#### 🇪🇸 Spain — Registro Mercantil / BORME
 
-|            |                                                                                                                           |
-| ---------- | ------------------------------------------------------------------------------------------------------------------------- |
-| **Portal** | https://www.rmc.es                                                                                                        |
-| **Auth**   | 💰 Paid for extracts                                                                                                      |
-| **Notes**  | Decentralized — each province has its own Registro Mercantil. Basic info through BRIS. CIF/NIF format for identification. |
-
+|                    |                                                                                                                                                                                                                                                       |
+| ------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Portal**         | https://www.rmc.es (Registro Mercantil Central) |
+| **Open data API**  | https://www.boe.es/datosabiertos/api/borme/sumario/{yyyymmdd} — daily summary of the BORME (Commercial Registry Gazette) |
+| **Auth**           | 🟢 BORME open data, no auth / 💰 Paid for registry extracts (nota simple, certificates) |
+| **Format**         | REST/XML or JSON (daily summary); notices as PDF |
+| **Bulk data**      | 📦 Each daily issue can be fetched through the summary API |
+| **Notes**          | Decentralized — each province has its own Registro Mercantil. Basic info through BRIS. The BORME is published every working day and lists registered events (incorporations, appointments, dissolutions, insolvencies…) by date and province; notices do not include the CIF, so a per-company lookup means parsing the history and matching it to the CIF yourself (commercial APIs built on the BORME, e.g. [SpainCompanyAPI](https://spaincompanyapi.com), offer lookup by CIF). Reuse under the BOE open data conditions (attribution required). CIF format: letter + 7 digits + check character (e.g. A46103834). VIES returns valid/invalid only for ES. Last verified 2026-11-21. |
 #### 🇬🇷 Greece — GEMI (General Electronic Commercial Registry)
 
 |            |                                                                                          |
@@ -412,6 +414,7 @@ These open datasets provide complete or near-complete company databases for bulk
 | 🇩🇰 Denmark        | CVR Open Data                                 | ~800K   | JSON         | Regular          |
 | 🇫🇮 Finland        | avoindata.prh.fi                              | ~600K   | JSON         | Regular          |
 | 🇸🇰 Slovakia       | [data.gov.sk](https://data.gov.sk/)           | ~500K   | CSV          | Regular          |
+| 🇪🇸 Spain          | BORME open data (boe.es/datosabiertos)        | Daily   | XML/JSON/PDF | Working days     |
 | 🇧🇷 Brazil         | CNPJ Open Data                                | ~50M    | CSV          | Monthly          |
 
 **Total**: ~95M+ company records freely available from official government sources.
